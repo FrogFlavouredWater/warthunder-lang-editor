@@ -346,7 +346,6 @@ hr {
   position: absolute;
   left: auto;
   bottom: auto;
-  mask: url("render-res/noise-base.png");
   mask-mode: luminance;
   mask-size: 29%;
   opacity: 1;
@@ -560,7 +559,6 @@ hr {
   position: absolute;
   left: auto;
   bottom: auto;
-  mask: url("render-res/noise-base.png");
   mask-mode: luminance;
   mask-size: 29%;
   opacity: 0.3; /* toned-down */
