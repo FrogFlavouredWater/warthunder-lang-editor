@@ -1,53 +1,102 @@
-body {
+/* Reset & base setup */
+* {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background-color: #121428;
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0e1124;
+  color: #f5f5f5;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+  min-height: 100vh;
   padding: 40px 20px;
 }
 
+/* Layout */
+.container {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  animation: fadeIn 1s ease-out;
+}
+
 h1 {
-  margin-top: 20px;
-  font-size: 2.2em;
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 p {
-  max-width: 700px;
-  margin: 0 auto 30px auto;
   font-size: 1.1em;
-  color: #cfcfe6;
+  line-height: 1.6;
+  color: #cfd3ec;
+  margin-bottom: 25px;
 }
 
+code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #ffffff;
+}
+
+/* Screenshot */
 .screenshot {
   width: 100%;
-  max-width: 800px;
+  max-width: 750px;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
   margin-bottom: 30px;
+  transform: scale(0.98);
+  transition: transform 0.3s ease;
 }
 
+.screenshot:hover {
+  transform: scale(1);
+}
+
+/* Download button */
 .download-button {
-  background-color: #219ebc;
-  color: white;
-  font-size: 1.2em;
-  padding: 14px 32px;
-  border: none;
+  display: inline-block;
+  background: #2aa5df;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 14px 28px;
   border-radius: 8px;
-  cursor: pointer;
   text-decoration: none;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
 }
 
 .download-button:hover {
-  background-color: #197a94;
+  background: #1e86bb;
+  transform: translateY(-2px);
 }
 
-.os-badges {
-  margin-top: 20px;
+.note {
+  margin-top: 30px;
   font-size: 0.95em;
-  color: #aaa;
+  color: #888ea8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.bounce {
+  animation: bounceIn 1.2s ease-out;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.7); opacity: 0; }
+  60% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
 }
