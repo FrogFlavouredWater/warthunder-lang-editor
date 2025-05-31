@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>War Thunder Localization Editor</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============== NAVBAR ============== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">WarThunder Localization Editor</div>
+      <nav class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#features">Features</a>
+        <a href="#platforms">Download</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============== HERO SECTION ============== -->
+  <main id="app">
+    <section id="hero">
+      <!-- We wrap your original #menu aside inside a hero section. -->
+      <aside id="menu" class="open dark">
+        <!-- Preserve all of your existing shine/glow spans -->
+        <span class="shine"></span>
+        <span class="shine shine-bottom"></span>
+        <span class="glow"></span>
+        <span class="glow glow-bottom"></span>
+        <span class="glow-bright"></span>
+        <span class="glow-bright glow-bottom"></span>
+        <div class="inner">
+          <header>
+            <h1>War Thunder Localization Editor</h1>
+            <p>
+              A lightweight GUI for editing your localization CSV files in <br>War Thunder.<br><br>
+              Fast, powerful, with full undo history and language filtering.
+            </p>
+          </header>
+          <a class="cta-btn" href="#" style="margin: 2rem 0 1rem;">
+            ↓ Download for Windows
+          </a>
+          <p class="note">
+            Unofficial macOS &amp; Linux support — no test environment.
+          </p>
+          <hr>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ============== FEATURES GRID ============== -->
+    <section id="features" class="section-wrapper">
+      <div class="section-content">
+        <h2 class="section-title">Features</h2>
+        <div class="features-grid">
+          <!-- Each card re‐uses the same glow/shiny structure as #menu, but scaled down -->
+          <div class="glass-card small-card">
+            <span class="shine"></span>
+            <span class="shine shine-bottom"></span>
+            <span class="glow"></span>
+            <span class="glow glow-bottom"></span>
+            <span class="glow-bright"></span>
+            <span class="glow-bright glow-bottom"></span>
+            <div class="card-inner">
+              <div class="icon">🌐</div>
+              <h3>Localization Editor</h3>
+              <p>Edit all <code>.csv</code> strings in one place.</p>
+            </div>
+          </div>
+
+          <div class="glass-card small-card">
+            <span class="shine"></span>
+            <span class="shine shine-bottom"></span>
+            <span class="glow"></span>
+            <span class="glow glow-bottom"></span>
+            <span class="glow-bright"></span>
+            <span class="glow-bright glow-bottom"></span>
+            <div class="card-inner">
+              <div class="icon">🕹️</div>
+              <h3>Undo History</h3>
+              <p>Every change is saved and can be reverted instantly.</p>
+            </div>
+          </div>
+
+          <div class="glass-card small-card">
+            <span class="shine"></span>
+            <span class="shine shine-bottom"></span>
+            <span class="glow"></span>
+            <span class="glow glow-bottom"></span>
+            <span class="glow-bright"></span>
+            <span class="glow-bright glow-bottom"></span>
+            <div class="card-inner">
+              <div class="icon">🌍</div>
+              <h3>Language Filtering</h3>
+              <p>Show only the language columns you care about.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== PLATFORMS GRID ============== -->
+    <section id="platforms" class="section-wrapper">
+      <div class="section-content">
+        <h2 class="section-title">Available Platforms</h2>
+        <div class="platforms-grid">
+          <div class="glass-card small-card">
+            <span class="shine"></span>
+            <span class="shine shine-bottom"></span>
+            <span class="glow"></span>
+            <span class="glow glow-bottom"></span>
+            <span class="glow-bright"></span>
+            <span class="glow-bright glow-bottom"></span>
+            <div class="card-inner">
+              <div class="icon">💻</div>
+              <h3>Windows</h3>
+              <p><em>Official build</em></p>
+              <a class="btn-download" href="#">Download</a>
+            </div>
+          </div>
+
+          <div class="glass-card small-card">
+            <span class="shine"></span>
+            <span class="shine shine-bottom"></span>
+            <span class="glow"></span>
+            <span class="glow glow-bottom"></span>
+            <span class="glow-bright"></span>
+            <span class="glow-bright glow-bottom"></span>
+            <div class="card-inner">
+              <div class="icon">🍎</div>
+              <h3>macOS</h3>
+              <p><em>Unofficial</em></p>
+              <a class="btn-download" href="#">Download</a>
+            </div>
+          </div>
+
+          <div class="glass-card small-card">
+            <span class="shine"></span>
+            <span class="shine shine-bottom"></span>
+            <span class="glow"></span>
+            <span class="glow glow-bottom"></span>
+            <span class="glow-bright"></span>
+            <span class="glow-bright glow-bottom"></span>
+            <div class="card-inner">
+              <div class="icon">🐧</div>
+              <h3>Linux</h3>
+              <p><em>Unofficial</em></p>
+              <a class="btn-download" href="#">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== FAQ (optional) ============== -->
+    <section id="faq" class="section-wrapper">
+      <div class="section-content">
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq-list">
+          <details class="glass-card faq-card">
+            <summary>How do I get started?</summary>
+            <div class="answer">
+              <p>Download the ZIP, extract it into your War Thunder directory, then run LocEd.exe.</p>
+            </div>
+          </details>
+          <details class="glass-card faq-card">
+            <summary>Is Linux supported?</summary>
+            <div class="answer">
+              <p>Yes—there’s an unofficial build. See the “Available Platforms” section for the link.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Your Name / Company. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
